@@ -1,0 +1,25 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0vh 20vw;
+  overflow: hidden;
+
+}
+
+ul li {
+  float: right;
+}
+
+ul li#name {
+  font-weight: bold;
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}

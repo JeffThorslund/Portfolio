@@ -1,0 +1,50 @@
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  width: 100vw;
+  height: auto;
+}
+
+.main-wrapper #headline {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.main-wrapper #content {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#hook {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+#hook {
+  padding: 5vh 0vw;
+}
+
+#picture {
+  width: 60vw;
+  height: auto;
+}
+
+#hook button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.32em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: white;
+}
+
+#hook button:hover {
+  border-color: grey;
+  color: grey;
+}

@@ -1,0 +1,10 @@
+.projects-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,33%);
+    grid-template-rows: repeat(2,50%);
+    grid-auto-flow: row;
+
+    height: 90vh;
+    width: 66%;
+    margin: 0 auto
+}

@@ -1,0 +1,12 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+#wrapper #title {
+    grid-column: 2/3;
+}
+
+#wrapper #card {
+    grid-column: 2/3;
+}

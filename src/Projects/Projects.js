@@ -4,22 +4,27 @@ import Frame from "./Frame";
 import "./Projects.css";
 
 const Project = () => {
+  const title = ["Taskit", "Landing Page", "Crazy", "Another One"];
   const descs = [
-    "Assign tasks seamlessly with a naturally intuitive tasking system. Elegant tool tips make learning instant",
-    "this is two"
+    "Assign tasks and track deadlines in a dead-simple interface.",
+    "A clean landing page that grips a client from landing to onboarding.",
+    "Project 1",
+    "Project 4"
   ];
-  const skills = ["the first", "the second"];
   let FrameArr = [];
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     let key = "frame" + i;
-    FrameArr.push(<Frame desc={descs[i]} skills={skills[i]} ident={key} />);
+    FrameArr.push(<Frame title={title[i]} desc={descs[i]} ident={key} />);
   }
 
   return (
     <div>
       <Navbar />
-      <div className="projects-wrapper">{FrameArr}</div>
+      <div className="centering">
+        <h1 id="title"> Projects </h1>
+        <div className="projects-wrapper">{FrameArr}</div>
+      </div>
     </div>
   );
 };

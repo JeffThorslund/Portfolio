@@ -1,6 +1,12 @@
 import React from "react";
 import "./Main.css";
 import Navbar from "../Navbar/Navbar";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const Home = () => {
   return (
@@ -25,7 +31,9 @@ const Home = () => {
         </div>
 
         <div id="hook">
-          <button type="button">Check out my projects.</button>
+          <button type="button">
+          <Link to='/projects'>Check out my projects.</Link>
+            </button>
         </div>
       </div>
     </div>

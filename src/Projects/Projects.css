@@ -1,10 +1,12 @@
-.projects-wrapper{
-    display: grid;
-    grid-template-columns: repeat(4,33%);
-    grid-template-rows: repeat(2,50%);
-    grid-auto-flow: row;
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: 40vh 40vh;
+  grid-gap: 1em;
+}
 
-    height: 90vh;
-    width: 66%;
-    margin: 0 auto
+.centering {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

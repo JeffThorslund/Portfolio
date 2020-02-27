@@ -36,7 +36,7 @@
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.32em;
   box-sizing: border-box;
-  text-decoration: none;
+  
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: center;
@@ -47,4 +47,8 @@
 #hook button:hover {
   border-color: grey;
   color: grey;
+}
+
+#hook button Link {
+  text-decoration: none;
 }

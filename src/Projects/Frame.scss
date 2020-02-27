@@ -1,68 +1,51 @@
-$base-color: #c6538c;
-$edge-radius: 1em;
+/* RGB */
+$color1: rgba(214, 40, 57, 1);
+$color2: rgba(186, 50, 79, 1);
+$color3: rgba(23, 86, 118, 1);
+$color4: rgba(75, 163, 195, 1);
+$color5: rgba(204, 230, 244, 1);
 
-.frame-wrapper{
-    border: 2px solid black;
-    
-    margin: 0.5em;
-    
-    transition: 0.3s;
-
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 80% 20%;
-
-    font-size: 16px;
+.frame-wrapper {
+  background-color: $color4;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.frame-wrapper:hover{
-    margin: 0.3em;
+.foreground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.section {
-    padding: 0.6em;
-    font-size: 20px;
-    
-    
+.foreground:hover {
+  opacity: 1;
 }
 
-#code, #deploy {
-    text-align: center;
-    background-color: rosybrown;
-    
+.frame-wrapper#frame0 {
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 
-#description {
-    grid-column: 1/3;
+.frame-wrapper#frame1 {
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.frame-wrapper#frame0{
-    border-radius: $edge-radius 0em 0em $edge-radius;
-    background-color: $base-color;
+.frame-wrapper#frame2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
-.frame-wrapper#frame2{
-    border-radius: 0em $edge-radius $edge-radius 0em;
+.frame-wrapper#frame3 {
+  grid-column: 2/4;
+  grid-row: 2/3;
 }
-

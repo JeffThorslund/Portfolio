@@ -4,14 +4,11 @@ import "./Frame.scss";
 const Frame = props => {
   return (
     <div className="frame-wrapper" id={props.ident}>
-      <div className="section" id="description">
-        {props.desc}
-      </div>
-      <div className="section" id="code">
-        See Code
-      </div>
-      <div className="section" id="deploy">
-        Deploy
+      <div className="foreground">
+        <h1 id="title">{props.title}</h1>
+        <h2 id="desc">{props.desc}</h2>
+        <div id="code">See Code</div>
+        <div id="deploy">Deploy</div>
       </div>
     </div>
   );
